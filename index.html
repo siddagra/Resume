@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<style>
+	h1 {
+		font-size: 72px;
+		background: -webkit-linear-gradient(45deg, blue, skyblue);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	h5 {
+		font-size: 72px;
+		background: -webkit-linear-gradient(45deg, blue, skyblue);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.section-intro {
+		max-width: 80% !important;
+	}
+
+	.container {
+		border-radius: 6px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		padding: 10px !important;
+	}
+
+	.section-intro {
+		max-width: 80%;
+	}
+
+	.pure-material-button-contained {
+		position: relative;
+		display: inline-block;
+		box-sizing: border-box;
+		border: none;
+		border-radius: 4px;
+		padding: 0 16px;
+		min-width: 64px;
+		height: 36px;
+		vertical-align: middle;
+		text-align: center;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+		background: -webkit-linear-gradient(45deg, rgba(0, 4, 255, 0.6), rgb(174, 0, 255, 0.6));
+		box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 36px;
+		overflow: hidden;
+		cursor: context-menu;
+		outline: none;
+		transition: box-shadow 0.2s;
+	}
+
+	.pure-material-button-contained::-moz-focus-inner {
+		border: none;
+	}
+
+	/* Overlay */
+	.pure-material-button-contained::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+		opacity: 0;
+		transition: opacity 0.2s;
+	}
+
+	/* Hover, Focus */
+	.pure-material-button-contained:hover,
+	.pure-material-button-contained:focus {
+		box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+	}
+
+	.pure-material-button-contained:hover::before {
+		opacity: 0.08;
+	}
+
+	.pure-material-button-contained:focus::before {
+		opacity: 0.24;
+	}
+
+	.pure-material-button-contained:hover:focus::before {
+		opacity: 0.3;
+	}
+
+
+	/* Disabled */
+	.pure-material-button-contained:disabled {
+		color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+		background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+		box-shadow: none;
+		cursor: initial;
+	}
+
+	.pure-material-button-contained:disabled::before {
+		opacity: 0;
+	}
+
+	.pure-material-button-contained:disabled::after {
+		opacity: 0;
+	}
+</style>
+
+<head>
+
+	<!--- basic page needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>Siddharth Agrawal Resume</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
+
+	<!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+	<!-- favicons
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+
+	<!-- intro section
+   ================================================== -->
+	<section id="intro" style="height: 100px;">
+
+		<div class="intro-overlay"></div>
+
+		<div class="intro-content">
+			<div class="row">
+
+				<div class="col-twelve">
+
+					<h2 style="color:white; font-size: 72px;">Siddharth
+						Agrawal
+					</h2>
+
+					<p class=" intro-position">
+						<span style="margin-top: 6px; text-transform: none; font-size: 24px; ">BSc. Computer Science
+							(Hons)</span>
+					</p>
+
+					<!--<a class=" button stroke smoothscroll" href="#about" title="">More About Me</a>-->
+
+				</div>
+
+			</div>
+
+			<div class="row button-section">
+				<div class="col-twelve">
+					<a href="#" title="Download CV" class="button button-primary" style="top: 200px;">Download
+						CV</a>
+				</div>
+			</div>
+		</div> <!-- /intro-content -->
+
+	</section> <!-- /intro -->
+
+
+	<!-- about section
+   ================================================== -->
+
+	<div class="row contact-info">
+
+		<div class="col-four tab-full">
+
+			<div class="icon">
+				<i class="icon-pin" style="color: grey;"></i>
+			</div>
+
+			<h5>Address</h5>
+
+			<p>
+				E2-501 Samarpan Towers<br>
+				Gulbai Tekra, Nr. IDBI Bank<br>
+				Ahmedabad, Gujarat - 38006
+			</p>
+
+		</div>
+
+		<div class="col-four tab-full collapse">
+
+			<div class="icon">
+				<i class="icon-mail" style="color: grey;"></i>
+			</div>
+
+			<h5>Email</h5>
+
+			<p>siddharth.a@ahduni.edu.in<br>
+			</p>
+
+		</div>
+
+		<div class="col-four tab-full">
+
+			<div class="icon">
+				<i class="icon-phone" style="color: grey;"></i>
+			</div>
+
+			<h5>Mobile Number</h5>
+
+			<p>+91 6353949630
+			</p>
+
+		</div>
+
+	</div> <!-- /section-intro -->
+
+
+
+
+	<!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h1>Statement of Purpose</h1>
+
+				<div class="intro-info">
+
+					<!--<img src="images/profile-pic.jpg" alt="Profile Picture">-->
+
+					<p class="lead">I wish to engage in the student ambassador programme to broaden my skillsets by
+						adding a strong leadership component to it.
+						I am good and confident at public speaking as I have given various presentations as
+						well as engaged in theatre acting in my high school. I also love interacting with people,
+						and would love to make the new students feel welcomed. </p>
+					<p class="lead">
+						Through university and high school projects, I developed leadership, teamwork, and
+						communication. I have gained several skills through the various volunteerisms,
+						projects, and events I have organised. This, along with my diligence, intellect, and
+						confidence in public speaking should prove useful to the university as a student
+						ambassador and I hope I can set an outstanding example for the new students joining
+						the university.</p>
+
+					<h1>About Me</h1>
+					<p class="lead">
+						I am interested in art, music, literature, computers, science, and almost every academic
+						subject. I am good at writing, communication, and technology which makes me capable
+						of handling varied writing and excel/data analysis work. I had taken IB higher-level
+						English and mathematics which elevated my numerical and language skills. I am
+						hardworking and willing to work long hours if required. I have earned merit-based
+						scholarships for multiple terms for topping in my programme due to my work ethic,
+						teamwork, and experience with presentations, report writing, and projects.</p>
+
+				</div>
+
+			</div>
+		</div>
+		</div> <!-- /section-intro-->
+
+		<div class="row resume-timeline" style="max-width: 80%;">
+
+			<div class="col-nine  tab-full">
+
+				<div class="resume-header">
+
+					<h1>Education</h1>
+
+				</div>
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>BSc. Computer Science (Hons)</h3>
+							<p>August 2020 - Present</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Ahmedabad University</h4>
+							<p>CGPA: 3.84</p>
+						</div>
+					</div>
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>International Baccalaureate Diploma</h3>
+							<p>2015 - 2019</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Mahatma Gandhi International School</h4>
+							<p>Higher Level: English, Math, Economics, Business Management </br>
+								Grade: 36/45</p>
+						</div>
+					</div>
+				</div> <!-- /timeline-wrap -->
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
+		<div class="row resume-timeline" style="max-width: 80%;">
+
+			<div class="col-nine  tab-full">
+
+				<div class="resume-header">
+
+					<h1>Volunteerism</h1>
+
+				</div>
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>High on Life Foundation
+							</h3>
+							<p>2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Made Anti-drug and Mental Health Awareness Media</h4>
+							<p></p>
+						</div>
+					</div>
+
+
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>GSWC</h3>
+							<p>2019</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Database and Server Management Systems</h4>
+							<p>Software for managing
+								inventories, finances, capacities, pest control, and warehouse locations.</p>
+						</div>
+					</div>
+
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Election Commission of India
+							</h3>
+							<p>2017</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Creating Media to Promote Ethical Voting
+								and Voter Turnout</h4>
+							<p></p>
+						</div>
+					</div>
+
+
+				</div> <!-- /timeline-wrap -->
+
+
+
+
+				<h1 style="margin-left: 410px;">Events Organised</h1>
+
+				<div class="timeline-wrap">
+
+
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<p>2018</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> School Theatre Play</h4>
+							<p>Organised collaboratively and acted in a theatre play in highschool.</p>
+						</div>
+					</div>
+
+
+					<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<p>2017</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Fashion Show</h4>
+							<p>Organised a fashion show collaboratively in highschool.</p>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div> <!-- /timeline-wrap -->
+			</div> <!-- /col-twelve -->
+
+			<div class="col-three tab-full">
+
+				<div class="resume-header">
+
+					<h1>Soft Skills</h1>
+
+				</div>
+				<div class="container">
+					<button class="pure-material-button-contained">Presentation Skills</button>
+					<button class="pure-material-button-contained">Public Speaking</button>
+					<button class="pure-material-button-contained">Writing Skills</button>
+					<button class="pure-material-button-contained">Communication</button>
+					<button class="pure-material-button-contained">Collaboration skills</button>
+					<button class="pure-material-button-contained">Teamwork</button>
+					<button class="pure-material-button-contained">Problem-solving</button>
+					<button class="pure-material-button-contained">industrious</button>
+				</div>
+			</div>
+		</div> <!-- /resume-timeline -->
+
+
+		<div class="row resume-timeline" style="max-width: 80%;">
+
+			<div class="col-nine  tab-full">
+
+				<div class="resume-header">
+
+					<h1>Projects</h1>
+
+				</div>
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>OCR and NLP analysis</h3>
+							<p>2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>UGRP under prof. Keita Omi</h4>
+							<p>Undergraduate Research Programme under Prof. Keita Omi:</br>
+								• Webscrpaing 1000+ documents</br>
+								• Converting 10000+ pages from image/pdf to text</br>
+								• Machine Learning text analysis on the documents</br>
+							</p>
+						</div>
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Website Development</h3>
+							<p>2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> AU Programming Club: Website Making Competition</h4>
+							<p> Took part in the competition and made a website using Svelte, html, css,
+								js. (<a href="https://student-companion.tk/">student-companion.tk</a>) </p>
+						</div>
+					</div> <!-- /timeline-block -->
+
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>C Programming Project</h3>
+							<p>2020</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> Math calculator similar to Wolfram Alpha </h4>
+							<p></p>
+						</div>
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Website Development</h3>
+							<p>2019</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> Website for a Combinatorics Problem</h4>
+							<p> Fully functioning GUI. Employing multiple algorithmic techniques to solve the problem
+								efficiently. (<a href="https://dauntlessbuildsearch.ml/">DauntlessBuildSearch.ml</a>)
+							</p>
+						</div>
+					</div> <!-- /timeline-block -->
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Machine Learning</h3>
+							<p>2019</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> Stock Price Prediction using Neural Networks and Deep Learning </h4>
+							<p>
+							</p>
+						</div>
+					</div> <!-- /timeline-block -->
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>3D Printer</h3>
+							<p>2017</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> Made a 3D Printer Ab Initio </h4>
+						</div>
+					</div> <!-- /timeline-block -->
+
+				</div>
+
+
+			</div>
+
+			<div class="col-three tab-full">
+
+				<div class="resume-header">
+
+					<h1>Technical Skills</h1>
+
+				</div>
+				<div class="container">
+					<button class="pure-material-button-contained">Computer Programming</button>
+					<button class="pure-material-button-contained">website development</button>
+					<button class="pure-material-button-contained">backend development</button>
+					<button class="pure-material-button-contained">frontend/ui development</button>
+					<button class="pure-material-button-contained">Data Analysis</button>
+					<button class="pure-material-button-contained">Text/Data processing</button>
+					<button class="pure-material-button-contained">Machine Learning</button>
+					<button class="pure-material-button-contained">CAD/3D modelling</button>
+					<button class="pure-material-button-contained">Numerical Reasoning</button>
+				</div>
+
+
+				<div class="resume-header" style="margin-top: 20px;">
+
+					<h1>Programming Languages</h1>
+
+				</div>
+				<div class="container">
+					<button class="pure-material-button-contained">CSS</button>
+					<button class="pure-material-button-contained">JS</button>
+					<button class="pure-material-button-contained">HTML</button>
+					<button class="pure-material-button-contained">ReactJS</button>
+					<button class="pure-material-button-contained">Firebase</button>
+					<button class="pure-material-button-contained">Svelte</button>
+					<button class="pure-material-button-contained">C</button>
+					<button class="pure-material-button-contained">C++</button>
+					<button class="pure-material-button-contained">Python</button>
+					<button class="pure-material-button-contained">Java</button>
+					<button class="pure-material-button-contained">R</button>
+					<button class="pure-material-button-contained">LaTeX</button>
+					<button class="pure-material-button-contained">PHP</button>
+					<button class="pure-material-button-contained">Lua</button>
+				</div>
+			</div>
+		</div>
+
+	</section> <!-- /features -->
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+
+</html>
